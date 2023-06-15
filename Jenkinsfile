@@ -10,9 +10,11 @@ pipeline {
 
             }
             stage('test') {
+                steps {
                     sh '''
                     ./run-tests
                     '''
+                }
             }
 
     }
