@@ -9,7 +9,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Test stage'
-                sh run-tests.sh
+                sh ./run-tests.sh
             }
         }
     }
