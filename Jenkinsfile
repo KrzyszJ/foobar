@@ -10,7 +10,7 @@ pipeline {
             steps {
                 echo 'Test stage'
                 sh '''
-                    ./run-tests
+                    ./run-tests.sh
                     '''
             }
         }
