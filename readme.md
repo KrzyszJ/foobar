@@ -1,1 +1,1 @@
-readme - szkolenie jenkins6
+readme - szkolenie jenkins7
