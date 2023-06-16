@@ -1,1 +1,1 @@
-echo ("tests")
+echo "run tests file"
