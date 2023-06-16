@@ -1,5 +1,9 @@
 pipeline {
-    agent any
+    agent {
+        dockerfile {
+            filename 'Dockerfile'
+        }
+    }
     stages {
         stage('Build') {
             steps {
@@ -11,6 +15,9 @@ pipeline {
                 echo 'Test stage'
                 sh '''
                     ./run-tests.sh
+                    '''
+                sh '''
+                    curl -s https://example.org/ | grep -F '<title>'
                     '''
             }
         }
