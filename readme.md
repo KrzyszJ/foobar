@@ -1,4 +1,4 @@
 readme - szkolenie jenkins
 
 readme change - innybranch
-change5
+change6
