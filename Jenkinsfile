@@ -10,9 +10,6 @@ pipeline {
             steps {
                 echo 'Test stage'
                 sh '''
-                "chmod +x ./run-tests.sh"
-                '''
-                sh '''
                     ./run-tests.sh
                     '''
             }
